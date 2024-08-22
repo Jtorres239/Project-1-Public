@@ -30,3 +30,25 @@ DVWA is a website you can safely practice hacking on.
 Red Team Vnet is where you practice using DVWA.
 ELK Vnet is where you analyze what you did in the playground to learn from it.
 This setup is all about learning and practicing cybersecurity in a controlled, safe environment.
+
+
+
+DVWA is focused on web application vulnerabilities, not malware, hardening, firewalls, or hackers directly. Here are some of the main types of vulnerabilities you can practice with in DVWA:
+
+SQL Injection: This is where an attacker tricks the website into running harmful commands in the database by entering special text in input fields (like search boxes).
+
+Cross-Site Scripting (XSS): This happens when an attacker gets a website to show harmful code (like JavaScript) to other users, which can steal their information or take over their accounts.
+
+File Inclusion: This is when an attacker tricks the website into running files that shouldn't be allowed, which can lead to serious security breaches.
+
+Command Injection: This involves entering special text that makes the website run commands on the server, which can give the attacker control over the website.
+
+CSRF (Cross-Site Request Forgery): This is when an attacker tricks a user into performing actions on a website they are logged into without their knowledge, like changing their password or making a purchase.
+
+These vulnerabilities are common in poorly secured web applications. DVWA allows you to learn how attackers might exploit these weaknesses and how you can defend against them.
+
+
+
+
+
+
