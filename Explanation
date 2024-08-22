@@ -1,0 +1,32 @@
+1. What is DVWA?
+DVWA stands for Damn Vulnerable Web Application. It’s like a training ground for learning about security. 
+Imagine a website made with lots of holes in it, like a leaky boat, but these holes are on purpose. These "holes" are weaknesses or vulnerabilities that hackers might use to break in. 
+DVWA is used by people who want to learn how to find and fix those holes.
+
+
+
+2. The Big Picture
+You have a computer (your personal computer) that you use to connect to a special setup in the cloud (Microsoft Azure).
+This setup in the cloud is split into two main parts: the Red Team Vnet and the ELK Vnet.
+
+3. Red Team Vnet
+Think of this as a playground where you can practice hacking safely.
+Jump Box Provisioner: This is like a gatekeeper. It’s the first place you go to get inside the playground. You use a special way (SSH) to talk to this gatekeeper.
+Web-1 and Web-2: These are two different parts of the playground. Both of them have the DVWA running, which means you can practice finding and fixing those holes (vulnerabilities) we talked about earlier.
+
+4. ELK Vnet
+This is another area that works like a detective. It keeps an eye on everything happening in the playground (Red Team Vnet). It uses three tools:
+Elasticsearch: It searches through all the activity logs.
+Logstash: It collects and organizes all the information.
+Kibana: It shows everything in pretty pictures (graphs, charts) so you can easily understand what’s happening.
+
+5. How It All Connects
+You connect to the playground (Red Team Vnet) through the gatekeeper (Jump Box).
+Inside the playground, you can interact with the Web-1 and Web-2 servers, which have DVWA.
+Meanwhile, the detective (ELK Vnet) is watching and keeping track of everything you do, so you can later look at how well you did.
+
+Summary
+DVWA is a website you can safely practice hacking on.
+Red Team Vnet is where you practice using DVWA.
+ELK Vnet is where you analyze what you did in the playground to learn from it.
+This setup is all about learning and practicing cybersecurity in a controlled, safe environment.
